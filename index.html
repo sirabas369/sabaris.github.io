@@ -273,7 +273,7 @@
     
     <!--Research Section Start-->
     <section
-      id="research"
+      id="Publications"
       class="research bg-gray pt-100 pb-50"
       data-scroll-index="2"
       style="display: none">
@@ -281,482 +281,8 @@
         <div class="row">
           <div class="col">
             <div class="heading text-center">
-              <h2>My research</h2>
+              <h2>My Publications</h2>
             </div>
-          </div>
-        </div>
-
-        <!--Paper 8 -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="paper-thumbnail">
-              <a href="https://boyuan.space/diffusion-forcing/">
-                <img
-                  loading="lazy"
-                  src="images/research/df.png"
-                  alt="paper thumbnail"
-                  width="504"
-                  height="300" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="paper-info" id="df">
-              <a href="https://boyuan.space/diffusion-forcing/">
-                <heading
-                  >Diffusion Forcing: Next-token Prediction Meets Full-Sequence
-                  Diffusion
-                </heading>
-              </a>
-              <br />
-              Boyuan Chen, Diego Marti Monso, Yilun Du, Max Simchowitz, Russ
-              Tedrake, Vincent Sitzmann
-              <br />
-              <strong>NeurIPS 2024</strong> (Conference of Neural Information
-              Processing Systems)
-              <br />
-              <br />
-              <a href="https://boyuan.space/diffusion-forcing/">website</a>
-              |
-              <a href="https://arxiv.org/abs/2407.01392">paper</a>
-              |
-              <a href="javascript:toggleblock('df_abs')">abstract</a> |
-              <a
-                shape="rect"
-                href="javascript:togglebib('df')"
-                class="togglebib"
-                >bibtex</a
-              >
-              <pre xml:space="preserve" style="display: none">
-@misc{chen2024diffusionforcingnexttokenprediction,
-    title={Diffusion Forcing: Next-token Prediction Meets Full-Sequence Diffusion}, 
-    author={Boyuan Chen and Diego Marti Monso and Yilun Du and Max Simchowitz and Russ Tedrake and Vincent Sitzmann},
-    year={2024},
-    eprint={2407.01392},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG},
-    url={https://arxiv.org/abs/2407.01392}, 
-}
-              </pre>
-            </div>
-            <p style="text-align: justify">
-              <i id="df_abs"
-                >This paper presents Diffusion Forcing, a new training paradigm
-                where a diffusion model is trained to denoise a set of tokens
-                with independent per-token noise levels. We apply Diffusion
-                Forcing to sequence generative modeling by training a causal
-                next-token prediction model to generate one or several future
-                tokens without fully diffusing past ones. Our approach is shown
-                to combine the strengths of next-token prediction models, such
-                as variable-length generation, with the strengths of
-                full-sequence diffusion models, such as the ability to guide
-                sampling to desirable trajectories. Our method offers a range of
-                additional capabilities, such as (1) rolling-out sequences of
-                continuous tokens, such as video, with lengths past the training
-                horizon, where baselines diverge and (2) new sampling and
-                guiding schemes that uniquely profit from Diffusion Forcing's
-                variable-horizon and causal architecture, and which lead to
-                marked performance gains in decision-making and planning tasks.
-                In addition to its empirical success, our method is proven to
-                optimize a variational lower bound on the likelihoods of all
-                subsequences of tokens drawn from the true joint distribution.
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <!--Paper 7 -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="paper-thumbnail">
-              <a href="https://dittogym.github.io/">
-                <img
-                  loading="lazy"
-                  src="images/research/ditto.jpg"
-                  alt="paper thumbnail"
-                  width="504"
-                  height="300" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="paper-info" id="dittogym">
-              <a href="https://dittogym.github.io/">
-                <heading
-                  >DittoGym: Learning to Control Soft Shape-Shifting Robots
-                </heading>
-              </a>
-              <br />
-              Suning Huang, Boyuan Chen, Huazhe Xu, Vincent Sitzmann
-              <br />
-              <strong>ICLR 2024</strong> (International Conference on Learning
-              Representations)
-              <br />
-              <br />
-              <a href="https://dittogym.github.io/">website</a>
-              |
-              <a href="https://arxiv.org/abs/2401.13231">paper</a>
-              |
-              <a href="javascript:toggleblock('dittogym_abs')">abstract</a> |
-              <a
-                shape="rect"
-                href="javascript:togglebib('dittogym')"
-                class="togglebib"
-                >bibtex</a
-              >
-              <pre xml:space="preserve" style="display: none">
-@misc{huang2024dittogym,
-  title={DittoGym: Learning to Control Soft Shape-Shifting Robots}, 
-  author={Suning Huang and Boyuan Chen and Huazhe Xu and Vincent Sitzmann},
-  year={2024},
-  eprint={2401.13231},
-  archivePrefix={arXiv},
-  primaryClass={cs.RO}
-}
-              </pre>
-            </div>
-            <p style="text-align: justify">
-              <i id="dittogym_abs"
-                >Robot co-design, where the morphology of a robot is optimized
-                jointly with a learned policy to solve a specific task, is an
-                emerging area of research. It holds particular promise for soft
-                robots, which are amenable to novel manufacturing techniques
-                that can realize learned morphologies and actuators. Inspired by
-                nature and recent novel robot designs, we propose to go a step
-                further and explore the novel reconfigurable robots, defined as
-                robots that can change their morphology within their lifetime.
-                We formalize control of reconfigurable soft robots as a
-                highdimensional reinforcement learning (RL) problem. We unify
-                morphology change, locomotion, and environment interaction in
-                the same action space, and introduce an appropriate,
-                coarse-to-fine curriculum that enables us to discover policies
-                that accomplish fine-grained control of the resulting robots. We
-                also introduce DittoGym, a comprehensive RL benchmark for
-                reconfigurable soft robots that require fine-grained morphology
-                changes to accomplish the tasks. Finally, we evaluate our
-                proposed coarse-to-fine algorithm on DittoGym and demonstrate
-                robots that learn to change their morphology several times
-                within a sequence, uniquely enabled by our RL algorithm.
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <!--Paper 6 -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="paper-thumbnail">
-              <a href="https://spatial-vlm.github.io/">
-                <img
-                  loading="lazy"
-                  src="images/research/spatial_vlm.jpg"
-                  alt="paper thumbnail"
-                  width="504"
-                  height="300" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="paper-info" id="spatialvlm">
-              <a href="https://spatial-vlm.github.io/">
-                <heading
-                  >SpatialVLM: Endowing Vision-Language Models with Spatial
-                  Reasoning Capabilities
-                </heading>
-              </a>
-              <br />
-              Boyuan Chen, Zhuo Xu, Sean Kirmani, Brian Ichter, Danny Driess,
-              Pete Florence, Dorsa Sadigh, Leonidas Guibas, Fei Xia
-              <br />
-              <strong>CVPR 2024</strong> (Conference on Computer Vision and
-              Pattern Recognition)
-              <br />
-              <br />
-              <a href="https://spatial-vlm.github.io/">website</a>
-              |
-              <a href="https://arxiv.org/abs/2401.12168">paper</a>
-              |
-              <a href="javascript:toggleblock('spatialvlm_abs')">abstract</a> |
-              <a
-                shape="rect"
-                href="javascript:togglebib('spatialvlm')"
-                class="togglebib"
-                >bibtex</a
-              >
-              <pre xml:space="preserve" style="display: none">
-@InProceedings{Chen_2024_CVPR,
-    author    = {Chen, Boyuan and Xu, Zhuo and Kirmani, Sean and Ichter, Brain and Sadigh, Dorsa and Guibas, Leonidas and Xia, Fei},
-    title     = {SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning Capabilities},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2024},
-    pages     = {14455-14465}
-}
-              </pre>
-            </div>
-            <p style="text-align: justify">
-              <i id="spatialvlm_abs"
-                >Understanding and reasoning about spatial relationships is a
-                fundamental capability for Visual Question Answering (VQA) and
-                robotics. While Vision Language Models (VLM) have demonstrated
-                remarkable performance in certain VQA benchmarks, they still
-                lack capabilities in 3D spatial reasoning, such as recognizing
-                quantitative relationships of physical objects like distances or
-                size differences. We hypothesize that VLMs' limited spatial
-                reasoning capability is due to the lack of 3D spatial knowledge
-                in training data and aim to solve this problem by training VLMs
-                with Internet-scale spatial reasoning data. To this end, we
-                present a system to facilitate this approach. We first develop
-                an automatic 3D spatial VQA data generation framework that
-                scales up to 2 billion VQA examples on 10 million real-world
-                images. We then investigate various factors in the training
-                recipe, including data quality, training pipeline, and VLM
-                architecture. Our work features the first internet-scale 3D
-                spatial reasoning dataset in metric space. By training a VLM on
-                such data, we significantly enhance its ability on both
-                qualitative and quantitative spatial VQA. Finally, we
-                demonstrate that this VLM unlocks novel downstream applications
-                in chain-of-thought spatial reasoning and robotics due to its
-                quantitative estimation capability.
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <!--Paper 5 -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="paper-thumbnail">
-              <a href="https://buoyancy99.github.io/ramp-rl/">
-                <img
-                  loading="lazy"
-                  src="images/research/ramp.jpg"
-                  alt="paper thumbnail"
-                  width="504"
-                  height="300" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="paper-info" id="ramp">
-              <a href="https://buoyancy99.github.io/ramp-rl/">
-                <heading
-                  >Self-Supervised Reinforcement Learning that Transfers using
-                  Random Features
-                </heading>
-              </a>
-              <br />
-              Boyuan Chen, Chuning Zhu, Pulkit Agrawal, Kaiqing Zhang, Abhishek
-              Gupta
-              <br />
-              <strong>NeurIPS 2023</strong> (Conference of Neural Information
-              Processing Systems)
-              <br />
-              <br />
-              <a href="https://buoyancy99.github.io/ramp-rl/">website</a>
-              |
-              <a href="https://arxiv.org/abs/2305.17250">paper</a>
-              | <a href="javascript:toggleblock('ramp_abs')">abstract</a> |
-              <a
-                shape="rect"
-                href="javascript:togglebib('ramp')"
-                class="togglebib"
-                >bibtex</a
-              >
-              <pre xml:space="preserve" style="display: none">
-@misc{chen2023selfsupervised,
-  title={Self-Supervised Reinforcement Learning that Transfers using Random Features}, 
-  author={Boyuan Chen and Chuning Zhu and Pulkit Agrawal and Kaiqing Zhang and Abhishek Gupta},
-  year={2023},
-  eprint={2305.17250},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG}
-}
-              </pre>
-            </div>
-            <p style="text-align: justify">
-              <i id="ramp_abs"
-                >Reinforcement learning (RL) algorithms have the potential not
-                only for synthesizing complex control behaviors, but also for
-                transfer across tasks. Model-free RL excels in solving problems
-                with high-dimensional observations or long horizons, but the
-                learned policies do not transfer across different reward
-                functions. Model-based RL, on the other hand, naturally enables
-                transfer across different reward functions, but struggles in
-                complex environments due to compounding error. In this work, we
-                propose a new method for transferring behaviors across tasks
-                with different rewards, combining the performance of model-free
-                RL with the transferability of model-based RL. In particular, we
-                show how model-free RL using a number of random features as the
-                reward allows for implicit modeling of long-horizon environment
-                dynamics. Model-predictive control using these implicit models
-                enables fast adaptation to problems with new reward functions
-                while avoiding the compounding error from model rollouts. Our
-                method can be trained on offline datasets without reward labels,
-                and quickly deployed on new tasks, making it more widely
-                applicable than typical RL methods. We validate that our
-                proposed method enables transfer across tasks on a variety of
-                manipulation and locomotion domains.
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <!--Paper 4 -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="paper-thumbnail">
-              <a href="https://sites.google.com/view/eil-website">
-                <img
-                  loading="lazy"
-                  src="images/research/eil.png"
-                  alt="paper thumbnail"
-                  width="504"
-                  height="300" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="paper-info" id="eil">
-              <a href="https://sites.google.com/view/eil-website">
-                <heading>Extraneousness-Aware Imitation Learning </heading>
-              </a>
-              <br />
-              Ray Chen Zheng, Kaizhe Hu, Zhecheng Yuan, Boyuan Chen, Huazhe Xu
-              <br />
-              <strong>ICRA 2023</strong> (International Conference on Robotics
-              and Automation)
-              <br />
-              <br />
-              <a href="https://sites.google.com/view/eil-website">website</a>
-              | <a href="https://arxiv.org/pdf/2210.01379v1.pdf">paper</a> |
-              <a href="javascript:toggleblock('eil_abs')">abstract</a> |
-              <a
-                shape="rect"
-                href="javascript:togglebib('eil')"
-                class="togglebib"
-                >bibtex</a
-              >
-              |
-              <a
-                href="https://drive.google.com/file/d/18JSM34ChoVIZtMsJStrc3Oal6fsS5muj/view"
-                >talk video</a
-              >
-              <pre xml:space="preserve" style="display: none">
-@misc{https://doi.org/10.48550/arxiv.2210.01379,
-  doi = {10.48550/ARXIV.2210.01379},
-  url = {https://arxiv.org/abs/2210.01379},
-  author = {Zheng, Ray Chen and Hu, Kaizhe and Yuan, Zhecheng and Chen, Boyuan and Xu, Huazhe},
-  keywords = {Robotics (cs.RO), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Extraneousness-Aware Imitation Learning},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
-}
-              </pre>
-            </div>
-            <p style="text-align: justify">
-              <i id="eil_abs"
-                >Visual imitation learning provides an effective framework to
-                learn skills from demonstrations. However, the quality of the
-                provided demonstrations usually significantly affects the
-                ability of an agent to acquire desired skills. Therefore, the
-                standard visual imitation learning assumes near-optimal
-                demonstrations, which are expensive or sometimes prohibitive to
-                collect. Previous works propose to learn from noisy
-                demonstrations; however, the noise is usually assumed to follow
-                a context-independent distribution such as a uniform or gaussian
-                distribution. In this paper, we consider another crucial yet
-                underexplored setting — imitation learning with task-irrelevant
-                yet locally consistent segments in the demonstrations (e.g.,
-                wiping sweat while cutting potatoes in a cooking tutorial). We
-                argue that such noise is common in real world data and term them
-                as “extraneous” segments. To tackle this problem, we introduce
-                Extraneousness-Aware Imitation Learning (EIL), a self-supervised
-                approach that learns visuomotor policies from third-person
-                demonstrations with extraneous subsequences. EIL learns
-                action-conditioned observation embeddings in a self-supervised
-                manner and retrieves task-relevant observations across visual
-                demonstrations while excluding the extraneous ones. Experimental
-                results show that EIL outperforms strong baselines and achieves
-                comparable policies to those trained with perfect demonstration
-                on both simulated and real-world robot control tasks.</i
-              >
-            </p>
-          </div>
-        </div>
-
-        <!--Paper 3 -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="paper-thumbnail">
-              <a href="https://nlmap-saycan.github.io/">
-                <img
-                  loading="lazy"
-                  src="images/research/nlmap.jpg"
-                  alt="paper thumbnail"
-                  width="504"
-                  height="300" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="paper-info" id="nlmap">
-              <a href="https://nlmap-saycan.github.io/">
-                <heading
-                  >Open-vocabulary Queryable Scene Representations for Real
-                  World Planning
-                </heading>
-              </a>
-              <br />
-              Boyuan Chen, Fei Xia, Brian Ichter, Kanishka Rao, Keerthana
-              Gopalakrishnan, Michael S. Ryoo, Austin Stone, Daniel Kappler
-              <br />
-              <strong>ICRA 2023</strong> (International Conference on Robotics
-              and Automation)
-              <br />
-              <br />
-              <a href="https://nlmap-saycan.github.io/">website</a>
-              | <a href="https://arxiv.org/abs/2209.09874">paper</a> |
-              <a href="javascript:toggleblock('nlmap_abs')">abstract</a> |
-              <a
-                shape="rect"
-                href="javascript:togglebib('nlmap')"
-                class="togglebib"
-                >bibtex</a
-              >
-              |
-              <a href="https://youtu.be/Q9CvvArq4ZA">talk video</a>
-              <pre xml:space="preserve" style="display: none">
-@inproceedings{chen2022nlmapsaycan,
-    title={Open-vocabulary Queryable Scene Representations for Real World Planning},
-    author={Boyuan Chen and Fei Xia and Brian Ichter and Kanishka Rao and Keerthana Gopalakrishnan and Michael S. Ryoo and Austin Stone and Daniel Kappler}
-    booktitle={arXiv preprint arXiv:2209.09874},
-    year={2022}
-}
-              </pre>
-            </div>
-            <p style="text-align: justify">
-              <i id="nlmap_abs"
-                >Large language models (LLMs) have unlocked new capabilities of
-                task planning from human instructions. However, prior attempts
-                to apply LLMs to real-world robotic tasks are limited by the
-                lack of grounding in the surrounding scene. In this paper, we
-                develop NLMap, an open-vocabulary and queryable scene
-                representation to address this problem. NLMap serves as a
-                framework to gather and integrate contextual information into
-                LLM planners, allowing them to see and query available objects
-                in the scene before generating a context-conditioned plan. NLMap
-                first establishes a natural language queryable scene
-                representation with Visual Language models (VLMs). An LLM based
-                object proposal module parses instructions and proposes involved
-                objects to query the scene representation for object
-                availability and location. An LLM planner then plans with such
-                information about the scene. NLMap allows robots to operate
-                without a fixed list of objects nor executable options, enabling
-                real robot operation unachievable by previous methods.</i
-              >
-            </p>
           </div>
         </div>
 
@@ -764,10 +290,10 @@
         <div class="row">
           <div class="col-md-4">
             <div class="paper-thumbnail">
-              <a href="https://buoyancy99.github.io/unsup-3d-keypoints/">
+              <a href="https://rishubhpar.github.io/PreciseControl.home/">
                 <img
                   loading="lazy"
-                  src="images/research/keypoint3D.jpg"
+                  src="images/research/precisecontrol.png"
                   alt="paper thumbnail"
                   width="504"
                   height="300" />
@@ -775,68 +301,50 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="paper-info" id="keypoint3D">
-              <a href="https://buoyancy99.github.io/unsup-3d-keypoints/">
+            <div class="paper-info" id="pc">
+              <a href="https://rishubhpar.github.io/PreciseControl.home/">
                 <heading
-                  >Unsupervised Learning of Visual 3D Keypoints for
-                  Control</heading
-                >
+                  >PreciseControl : Enhancing Text-to-Image Diffusion Models with Fine-Grained Attribute Control
+                </heading>
               </a>
               <br />
-              Boyuan Chen, Pieter Abbeel, Deepak Pathak
+              Rishubh Parihar, Sachidanand V S, Sabariswaran Mani, Tejan Karmali, R. Venkatesh Babu,
               <br />
-              <strong>ICML 2021</strong> (International Conference on Machine
-              Learning)
+              <strong>ECCV 2024</strong> (European Conference on Computer Vision)
               <br />
               <br />
-              <a href="https://buoyancy99.github.io/unsup-3d-keypoints/"
-                >website</a
-              >
-              | <a href="https://arxiv.org/abs/2106.07643">paper</a> |
-              <a href="javascript:toggleblock('keypoint3D_abs')">abstract</a> |
+              <a href="https://rishubhpar.github.io/PreciseControl.home/">website</a>
+              |
+              <a href="https://arxiv.org/abs/2408.05083">paper</a>
+              |
+              <a href="javascript:toggleblock('pc_abs')">abstract</a> |
               <a
                 shape="rect"
-                href="javascript:togglebib('keypoint3D')"
+                href="javascript:togglebib('pc')"
                 class="togglebib"
                 >bibtex</a
               >
-              |
-              <a href="https://github.com/buoyancy99/unsup-3d-keypoints"
-                >code</a
-              >
-              |
-              <a href="https://youtu.be/XnRzzxnlMOM">talk video</a>
-
               <pre xml:space="preserve" style="display: none">
-@article{chen2021keypoint3D,
-    author = {Chen, Boyuan and Abbeel, Pieter and Pathak, Deepak},
-    title  = {Unsupervised Learning of Visual 3D Keypoints for Control},
-    journal= {ICML},
-    year   = {2021}
+@misc{rishubh2024precisecontrol,
+      title={PreciseControl : Enhancing Text-to-Image Diffusion Models with Fine-Grained Attribute Control},
+      author={Rishubh Parihar, Sachidanand VS, Sabariswaran Mani, Tejan Karmali, R. Venkatesh Babu},
+      booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+      year={2024},
 }
               </pre>
             </div>
             <p style="text-align: justify">
-              <i id="keypoint3D_abs"
-                >Learning sensorimotor control policies from high-dimensional
-                images crucially relies on the quality of the underlying visual
-                representations. Prior works show that structured latent space
-                such as visual keypoints often outperforms unstructured
-                representations for robotic control. However, most of these
-                representations, whether structured or unstructured are learned
-                in a 2D space even though the control tasks are usually
-                performed in a 3D environment. In this work, we propose a
-                framework to learn such a 3D geometric structure directly from
-                images in an end-to-end unsupervised manner. The input images
-                are embedded into latent 3D keypoints via a differentiable
-                encoder which is trained to optimize both a multi-view
-                consistency loss and downstream task objective. These discovered
-                3D keypoints tend to meaningfully capture robot joints as well
-                as object movements in a consistent manner across both time and
-                3D space. The proposed approach outperforms prior state-of-art
-                methods across a variety of reinforcement learning
-                benchmarks.</i
-              >
+              <i id="pc_abs"
+                >Recently, we have seen a surge of personalization methods for text-to-image (T2I) diffusion models to learn a concept using a few images. 
+                Existing approaches, when used for face personalization, suffer to achieve convincing inversion with identity preservation and rely on semantic text-based editing of the generated face. 
+                However, a more fine-grained control is desired for facial attribute editing, which is challenging to achieve solely with text prompts. 
+                In contrast, StyleGAN models learn a rich face prior and enable smooth control towards fine-grained attribute editing by latent manipulation. 
+                This work uses the disentangled W+ space of StyleGANs to condition the T2I model. This approach allows us to precisely manipulate facial attributes, such as smoothly introducing a smile, while preserving the existing coarse text-based control inherent in T2I models. 
+                To enable conditioning of the T2I model on the W+ space, we train a latent mapper to translate latent codes from W+ to the token embedding space of the T2I model. 
+                The proposed approach excels in the precise inversion of face images with attribute preservation and facilitates continuous control for fine-grained attribute editing. 
+                Furthermore, our approach can be readily extended to generate compositions involving multiple individuals. 
+                We perform extensive experiments to validate our method for face personalization and fine-grained attribute editing.
+              </i>
             </p>
           </div>
         </div>
@@ -845,10 +353,10 @@
         <div class="row">
           <div class="col-md-4">
             <div class="paper-thumbnail">
-              <a href="https://sites.google.com/view/sapnew/home">
+              <a href="https://sites.google.com/view/iitkgp-nips23toto/home">
                 <img
                   loading="lazy"
-                  src="images/research/sap.jpg"
+                  src="./images/research/diffclone.png"
                   alt="paper thumbnail"
                   width="504"
                   height="300" />
@@ -856,156 +364,49 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="paper-info" id="sap">
-              <a href="https://sites.google.com/view/sapnew/home">
+            <div class="paper-info" id="diffclone">
+              <a href="https://sites.google.com/view/iitkgp-nips23toto/home">
                 <heading
-                  >Zero-shot Policy Learning with Spatial Temporal Reward
-                  Decomposition on Contingency-aware Observation</heading
-                >
+                  >DiffClone: Enhanced Behaviour Cloning in Robotics with Diffusion-Driven Policy Learning
+                </heading>
               </a>
               <br />
-              Boyuan Chen*, Huazhe Xu*, Yang Gao and Trevor Darrell
+              Sabariswaran Mani, Sreyas Venkataraman*, Abhranil Chandra*, Adyan Rizvi*, Yash Sirvi*, Soumojit Bhattacharya*, Aritra Hazra
               <br />
-              <strong>ICRA 2021</strong> (International Conference on Robotics
-              and Automation)
+              <strong>NeurIPS 2023 Workshop</strong> (Train Offline Test Online (TOTO) Workshop, Conference on Neural Information Processing Systems )
               <br />
               <br />
-              <a href="https://sites.google.com/view/sapnew/home">website</a> |
-              <a href="https://arxiv.org/abs/1910.08143">paper</a> |
-              <a href="javascript:toggleblock('sap_abs')">abstract</a> |
+              <a href="https://sites.google.com/view/iitkgp-nips23toto/home">website</a>
+              |
+              <a href="https://arxiv.org/abs/2401.09243">paper</a>
+              |
+              <a href="javascript:toggleblock('diffclone_abs')">abstract</a> |
               <a
                 shape="rect"
-                href="javascript:togglebib('sap')"
+                href="javascript:togglebib('diffclone')"
                 class="togglebib"
                 >bibtex</a
               >
-              | <a href="https://github.com/buoyancy99/sap">code</a> |
-
               <pre xml:space="preserve" style="display: none">
-@article{DBLP:journals/corr/abs-1910-08143,
-    author    = {Huazhe Xu and
-                    Boyuan Chen and
-                    Yang Gao and
-                    Trevor Darrell},
-    title     = {Scoring-Aggregating-Planning: Learning task-agnostic priors from interactions
-                    and sparse rewards for zero-shot generalization},
-    journal   = {CoRR},
-    volume    = {abs/1910.08143},
-    year      = {2019},
-    url       = {http://arxiv.org/abs/1910.08143},
-    eprinttype = {arXiv},
-    eprint    = {1910.08143},
-    timestamp = {Fri, 27 Nov 2020 15:04:16 +0100},
-    biburl    = {https://dblp.org/rec/journals/corr/abs-1910-08143.bib},
-    bibsource = {dblp computer science bibliography, https://dblp.org}
-    }
-                            </pre
-              >
-            </div>
-            <p style="text-align: justify">
-              <i id="sap_abs"
-                >It is a long-standing challenge to enable an intelligent agent
-                to learn in one environment and generalize to an unseen
-                environment without further data collection and finetuning. In
-                this paper, we consider a zero shot generalization problem setup
-                that complies with biological intelligent agents' learning and
-                generalization processes. The agent is first presented with
-                previous experiences in the training environment, along with
-                task description in the form of trajectory-level sparse rewards.
-                Later when it is placed in the new testing environment, it is
-                asked to perform the task without any interaction with the
-                testing environment. We find this setting natural for biological
-                creatures and at the same time, challenging for previous
-                methods. Behavior cloning, state-of-art RL along with other
-                zero-shot learning methods perform poorly on this benchmark.
-                Given a set of experiences in the training environment, our
-                method learns a neural function that decomposes the sparse
-                reward into particular regions in a contingency-aware
-                observation as a per step reward. Based on such decomposed
-                rewards, we further learn a dynamics model and use Model
-                Predictive Control (MPC) to obtain a policy. Since the rewards
-                are decomposed to finer-granularity observations, they are
-                naturally generalizable to new environments that are composed of
-                similar basic elements. We demonstrate our method on a wide
-                range of environments, including a classic video game -- Super
-                Mario Bros, as well as a robotic continuous control task. Please
-                refer to the project page for more visualized results.
-              </i>
-            </p>
-          </div>
-        </div>
-
-        <!--Paper 0 -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="paper-thumbnail">
-              <a href="https://sites.google.com/view/staghuntrpg">
-                <img
-                  loading="lazy"
-                  src="images/research/rpg.jpg"
-                  alt="paper thumbnail"
-                  width="504"
-                  height="300" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="paper-info" id="rpg">
-              <a href="https://sites.google.com/view/staghuntrpg">
-                <heading
-                  >Discovering Diverse Multi-agent Strategic Behavior via Reward
-                  Randomization</heading
-                >
-              </a>
-              <br />
-              Zhenggang Tang, Chao Yu, Boyuan Chen, Huazhe Xu, Xiaolong Wang,
-              Fei Fang, Simon Shaolei Du, Yu Wang, Yi Wu
-              <br />
-              <strong>ICLR 2021</strong> (International Conference on Learning
-              Representations)
-              <br />
-              <br />
-              <a href="https://sites.google.com/view/staghuntrpg">website</a> |
-              <a href="https://arxiv.org/abs/2103.04564">paper</a> |
-              <a href="javascript:toggleblock('rpg_abs')">abstract</a> |
-              <a
-                shape="rect"
-                href="javascript:togglebib('rpg')"
-                class="togglebib"
-                >bibtex</a
-              >
-              | <a href="https://github.com/staghuntrpg/RPG">code</a> |
-
-              <pre xml:space="preserve" style="display: none">
-@misc{tang2021discovering,
-    title={Discovering Diverse Multi-Agent Strategic Behavior via Reward Randomization}, 
-    author={Zhenggang Tang and Chao Yu and Boyuan Chen and Huazhe Xu and Xiaolong Wang and Fei Fang and Simon Du and Yu Wang and Yi Wu},
-    year={2021},
-    eprint={2103.04564},
-    archivePrefix={arXiv},
-    primaryClass={cs.AI}
+@inproceedings{
+mani2024diffclone,
+title={DiffClone: Enhanced Behaviour Cloning in Robotics with Diffusion-Driven Policy Learning},
+author={Sabariswaran Mani and Abhranil Chandra and Sreyas Venkataraman and Adyan Rizvi and Yash Sirvi and Soumojit Bhattacharya and Aritra Hazra},
+journal={arXiv preprint arXiv:2401.09243},
+year={2024}
 }
-                            </pre
-              >
+              </pre>
             </div>
             <p style="text-align: justify">
-              <i id="rpg_abs"
-                >We propose a simple, general and effective technique, Reward
-                Randomization for discovering diverse strategic policies in
-                complex multi-agent games. Combining reward randomization and
-                policy gradient, we derive a new algorithm, Reward-Randomized
-                Policy Gradient (RPG). RPG is able to discover multiple
-                distinctive human-interpretable strategies in challenging
-                temporal trust dilemmas, including grid-world games(MonsterHunt
-                and Escalation) and a real-world web game Agar.io, where
-                multiple equilibria exist but standard multi-agent policy
-                gradient algorithms always converge to a fixed one with a
-                sub-optimal payoff for every player even using state-of-the-art
-                exploration techniques (including RND, DIAYN, MAVEN).
-                Furthermore, with the set of diverse strategies from RPG, we can
-                (1) achieve higher payoffs by fine-tuning the best policy from
-                the set; and (2) obtain an adaptive agent by using this set of
-                strategies as its training opponents.
+              <i id="diffclone_abs"
+                >Robot learning tasks are extremely compute-intensive and hardware-specific. 
+                Thus the avenues of tackling these challenges, using a diverse dataset of offline demonstrations that can be used to train robot manipulation agents, is very appealing. 
+                The Train-Offline-Test-Online (TOTO) Benchmark provides a well-curated open-source dataset for offline training comprised mostly of expert data and also benchmark scores of the common offline-RL and behaviour cloning agents. 
+                In this paper, we introduce DiffClone, an offline algorithm of enhanced behaviour cloning agent with diffusion-based policy learning, and measured the efficacy of our method on real online physical robots at test time. 
+                This is also our official submission to the Train-Offline-Test-Online (TOTO) Benchmark Challenge organized at NeurIPS 2023. We experimented with both pre-trained visual representation and agent policies. 
+                In our experiments, we find that MOCO finetuned ResNet50 performs the best in comparison to other finetuned representations. 
+                Goal state conditioning and mapping to transitions resulted in a minute increase in the success rate and mean-reward. 
+                As for the agent policy, we developed DiffClone, a behaviour cloning agent improved using conditional diffusion.
               </i>
             </p>
           </div>
