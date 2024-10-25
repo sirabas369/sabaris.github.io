@@ -1238,8 +1238,6 @@ section.experience .company-logo {
     margin-right: 60px;
     flex-shrink: 0;
     display: flex;
-    align-items: center; /* Center the logo vertically */
-    justify-content: center; /* Center the logo horizontally */
 }
 
 section.experience .company-logo img {
