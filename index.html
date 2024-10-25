@@ -206,7 +206,7 @@
             <!--About Image-->
             <div class="about-img">
               <img
-                src="images/about-img.jpg"
+                src="images/about/about-img.jpg"
                 alt="Photo of Sabariswaran Mani"
                 width="550"
                 height="600" />
@@ -264,6 +264,25 @@
     </section>
     <!--About Section End-->
 
+    <!-- Script for random photos -->
+    <script>
+      // Array of image paths
+      const aboutImages = [
+        './images/about/about-img1.jpg',
+        './images/about/about-img2.jpg'
+      ];
+      
+      // Function to get a random image
+      function getRandomAboutPhoto() {
+        const randomIndex = Math.floor(Math.random() * aboutImages.length);
+        return aboutImages[randomIndex];
+      }
+      
+      // Set the src of the image element
+      document.getElementById('aboutPhoto').src = getRandomAboutPhoto();
+    </script>
+    <!-- End of Script for random photos -->
+    
     <!--Research Section Start-->
     <section
       id="research"
