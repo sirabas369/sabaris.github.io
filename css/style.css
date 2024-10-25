@@ -15,16 +15,18 @@
         5. About Section
         6. Services Section
         7. Research Section
-        8. Portfolio Section
-        9. Blogs Section
-        10. Testimonial Section
-        11. Contact Form Section
-        12. Footer
-        13. Blogs Page
-        14. Single Blog Page
-        15. Mobile Responsive
-        16. Fallback font
+        8. Experience Section  /* New Section */
+        9. Portfolio Section
+        10. Blogs Section
+        11. Testimonial Section
+        12. Contact Form Section
+        13. Footer
+        14. Blogs Page
+        15. Single Blog Page
+        16. Mobile Responsive
+        17. Fallback font
 ==================================*/
+
 
 
 /*============ 1. Body and Core Css ============*/
@@ -1207,6 +1209,84 @@ section.portfolio .portfolio-items .item .item-content:hover .item-overlay .icon
 }
 
 
+/*============ 8. Experience Section ============*/
+
+section.experience {
+    background-color: #f9f9f9;
+}
+
+section.experience .experience-item {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+section.experience .experience-item:hover {
+    transform: translateY(-10px);
+}
+
+section.experience .company-logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+section.experience .company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.experience .experience-content {
+    flex-grow: 1;
+}
+
+section.experience .experience-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section.experience .experience-content h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+section.experience .experience-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section.experience .experience-details li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 1.2em;
+    position: relative;
+    color: #555;
+}
+
+section.experience .experience-details li:before {
+    content: "\f0da"; /* FontAwesome arrow */
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+
+
 /*============ 9. Blogs Section ============*/
 
 .blogs .owl-carousel .owl-stage-outer {
@@ -1678,3 +1758,4 @@ section.banner-blog .banner-caption h1 {
     descent-override: 25%;
     line-gap-override: 0%;
 }
+
