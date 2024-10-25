@@ -1232,10 +1232,10 @@ section.experience .experience-item:hover {
 
 section.experience .company-logo {
     width: 100px; /* Increase this value as needed */
-    height: 100%; /* Make the logo cover the entire height of the item */
+    height: 100px; /* Make the logo cover the entire height of the item */
     overflow: hidden;
     border-radius: 15px; /* Rounded rectangle */
-    margin-right: 30px;
+    margin-right: 60px;
     flex-shrink: 0;
     display: flex;
     align-items: center; /* Center the logo vertically */
@@ -1243,7 +1243,7 @@ section.experience .company-logo {
 }
 
 section.experience .company-logo img {
-    width: auto; /* Maintain aspect ratio */
+    width: 100%; /* Maintain aspect ratio */
     height: 100%; /* Make sure the logo fills the height */
     object-fit: cover; /* Crop the image if it overflows */
 }
