@@ -90,15 +90,18 @@
     color: #000000; /* Black text color for contrast */
     text-align: left; /* Align text to the left */
     transform: translateX(700px); /* Adjust this value to move right */
-    max-width: 600px; /* Limit width to prevent overflow */
+    max-width: 800px; /* Limit width to prevent overflow */
 }
 
 .competition-caption .position {
     font-size: 2.5rem; /* Size of the position text */
-    color: #FFD700; /* Gold color for highlighting */
+    color: #FFD700; /* Gold color for text */
     font-weight: 600;
     margin-bottom: 10px; /* Space between position and title */
-    display: block; /* Display as a block to place on its own line */
+    display: inline-block; /* Allow background to wrap only the text */
+    background-color: #000000; /* Black background for contrast */
+    padding: 5px 10px; /* Padding around the text */
+    border-radius: 5px; /* Optional: rounded corners */
 }
 
 .competition-caption h1 {
@@ -108,10 +111,16 @@
 }
 
 .competition-caption .details p {
-    font-size: 1.5rem; /* Larger paragraph text */
+    font-size: 1.5rem;
     line-height: 1.6;
-    margin-bottom: 10px; /* Spacing between points */
-    margin: 0; /* Remove additional margins */
+    margin-bottom: 10px;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adds a subtle text shadow */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.competition-caption .details p:hover {
+    transform: scale(1.05); /* Slightly enlarges text on hover */
 }
 
 /*============ 1. Body and Core Css ============*/
