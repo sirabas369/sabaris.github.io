@@ -66,6 +66,61 @@
     text-transform: uppercase;
 }
 
+.competition-fullscreen {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    position: relative;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.competition-fullscreen:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.competition-caption {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* White text color for contrast */
+    text-align: left; /* Align text to the left */
+    max-width: 900px; /* Limit the width of the text block */
+}
+
+.competition-caption h1 {
+    font-size: 3rem; /* Adjust size to your preference */
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px; /* Space between title and position */
+}
+
+.competition-caption .position {
+    font-size: 2.5rem; /* Smaller than the main title */
+    color: #FFD700; /* Gold color for highlighting */
+    font-weight: 600;
+}
+
+.competition-caption .details p {
+    font-size: 1.5rem; /* Larger paragraph text */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Spacing between points */
+}
+
 /*============ 1. Body and Core Css ============*/
 
 * {
