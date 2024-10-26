@@ -1224,6 +1224,7 @@ section.experience .experience-item {
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    padding-left: 40px; /* Add padding to increase horizontal space */
 }
 /*     padding-left: 40px; /* Add padding to increase horizontal space */ */
 
@@ -1232,8 +1233,8 @@ section.experience .experience-item:hover {
 }
 
 section.experience .company-logo {
-    width: 200px; /* Increase this value as needed */
-    height: 200px; /* Make the logo cover the entire height of the item */
+    width: 100px; /* Increase this value as needed */
+    height: 100px; /* Make the logo cover the entire height of the item */
     overflow: hidden;
     border-radius: 15px; /* Rounded rectangle */
     flex-shrink: 0;
