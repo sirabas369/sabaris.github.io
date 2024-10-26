@@ -80,10 +80,6 @@
     padding: 0 30px;
 }
 
-.competition-intro:after {
-    content: none;
-}
-
 .competition-caption {
     position: relative;
     z-index: 2;
