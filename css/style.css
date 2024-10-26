@@ -88,9 +88,8 @@
     position: relative;
     z-index: 2;
     color: #000000; /* Black text color for contrast */
-    text-align: left; /* Align text to the left */
     max-width: 1000px; /* Limit the width of the text block */
-    margin-left: 800; /* Align text to the left margin */
+    margin-left: 800px; /* Align text to the left margin */
 }
 
 .competition-caption .position {
