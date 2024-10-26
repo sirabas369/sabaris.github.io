@@ -27,7 +27,44 @@
         17. Fallback font
 ==================================*/
 
+/*========== Competitions Intro Full-Screen Section ==========*/
 
+.competition-intro {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    position: relative;
+    overflow: hidden;
+}
+
+.competition-intro:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.intro-caption {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* White text color for contrast */
+    text-align: center;
+}
+
+.intro-caption h1 {
+    font-size: 4rem; /* Large heading */
+    font-weight: 800;
+    text-transform: uppercase;
+}
 
 /*============ 1. Body and Core Css ============*/
 
