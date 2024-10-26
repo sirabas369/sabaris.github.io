@@ -1243,8 +1243,8 @@ section.experience .company-logo {
 }
 
 section.experience .company-logo img {
-    width: 140%; /* Maintain aspect ratio */
-    height: 140%; /* Make sure the logo fills the height */
+    width: 110%; /* Maintain aspect ratio */
+    height: 110%; /* Make sure the logo fills the height */
     object-fit: contain; /* Crop the image if it overflows */
 }
 
