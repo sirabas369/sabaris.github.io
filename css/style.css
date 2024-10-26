@@ -53,17 +53,18 @@
     z-index: 1;
 }
 
-.intro-caption {
+.competition-intro .intro-caption {
     position: relative;
     z-index: 2;
-    color: #ffffff !important; /* Force white text color */
+    color: #ffffff; /* Force white text color */
     text-align: center;
 }
 
-.intro-caption h1 {
+.competition-intro .intro-caption h1 {
     font-size: 4rem; /* Large heading */
     font-weight: 800;
     text-transform: uppercase;
+    color: #ffffff; /* Ensure the heading is white */
 }
 
 .competition-fullscreen {
