@@ -515,97 +515,58 @@ year={2024}
     <!-- Experience Section End -->
 
     <!-- Competitions Section Start -->
-    <section id="competitions" class="competitions pt-100 pb-100" data-scroll-index="4">
-        <div class="container">
-            <div class="heading text-center mb-60">
-                <h2>Competitions (Many more to come &#58;&#41;)</h2>
-            </div>
-            <div class="row">
-                <!-- Competition Item 1 -->
-                <div class="col-lg-4 col-md-6 mb-40">
-                    <div class="competition-item">
-                        <div class="competition-logo">
-                            <img src="images/competitions/logo1.png" alt="Competition Logo">
-                        </div>
-                        <div class="competition-content">
-                            <div class="competition-header">
-                                <h3>Competition Name</h3>
-                                <span class="competition-position">Gold</span>
-                            </div>
-                            <ul class="competition-details">
-                                <li>Achieved 1st place in the regional finals.</li>
-                                <li>Developed a machine learning model for traffic prediction.</li>
-                                <li>Collaborated with a team of 5 members.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Competition Item 2 -->
-                <div class="col-lg-4 col-md-6 mb-40">
-                    <div class="competition-item">
-                        <div class="competition-logo">
-                            <img src="images/competitions/logo2.png" alt="Competition Logo">
-                        </div>
-                        <div class="competition-content">
-                            <div class="competition-header">
-                                <h3>Another Competition</h3>
-                                <span class="competition-position">Leaderboard First</span>
-                            </div>
-                            <ul class="competition-details">
-                                <li>Ranked top 10 globally in the coding competition.</li>
-                                <li>Designed and presented a drone for obstacle navigation.</li>
-                                <li>Presented the solution at a major tech conference.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Competitions Section End -->
-    
-    <!-- Competitions Section Start -->
-    <section
-      id="competitions"
-      class="competitions-banner"
-      style="background-image: url('./images/competitions/competitions-banner.jpg')"
-      data-stellar-background-ratio=".7"
-      data-scroll-index="4">
+    <section id="competitions" class="banner" data-scroll-index="4"
+             style="background-image: url('./images/competitions/competitions-banner-bg.webp');">
       <div class="container">
         <div class="banner-caption">
           <h1>Competitions</h1>
-          <p class="cd-headline clip mt-30">
-            <span>Exploring the world of challenges.</span><br />
-            <span>From</span>
-            <span class="cd-words-wrapper">
-              <b class="is-visible">AI competitions.</b>
-              <b>Robotics events.</b>
-              <b>Hackathons.</b>
-              <b>Machine Learning challenges.</b>
-            </span>
-          </p>
+          <p>Showcasing My Achievements</p>
         </div>
         <div class="arrow">
-          <a class="fa fa-chevron-down fa-2x" href="#" data-scroll-nav="5"></a>
+          <a class="fa fa-chevron-down fa-2x" href="#competition1"></a>
         </div>
       </div>
     </section>
+    <!-- Competitions Section End -->
     
-    <!-- Individual Competition Section -->
-    <section
-      class="competition-fullscreen"
-      style="background-image: url('./images/competitions/competition1.jpg');"
-      data-scroll-index="5">
-      <div class="container competition-details">
-        <h2>Machine Learning Challenge</h2>
-        <span class="competition-position">Gold Medal</span>
-        <ul class="competition-points">
-          <li>Developed a state-of-the-art model to predict stock prices.</li>
-          <li>Collaborated with a team of 5 to design a robust algorithm.</li>
-          <li>Achieved the highest score on the competition leaderboard.</li>
-        </ul>
-      </div>
+    <!-- Competitions Main Container -->
+    <section id="competitions-list">
+      <!-- Competition 1 -->
+      <section id="competition1" class="competition-fullscreen" 
+               style="background-image: url('./images/competitions/competition1-bg.jpg');">
+        <div class="container">
+          <div class="competition-caption">
+            <h1>Codeathon Challenge <span class="position">Gold</span></h1>
+            <div class="details">
+              <p>Developed an AI model to predict stock prices with 95% accuracy.</p>
+              <p>Competed against 500+ teams nationwide.</p>
+              <p>Won the first place and secured internship offers from top firms.</p>
+            </div>
+          </div>
+          <div class="arrow">
+            <a class="fa fa-chevron-down fa-2x" href="#competition2"></a>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Competition 2 -->
+      <section id="competition2" class="competition-fullscreen" 
+               style="background-image: url('./images/competitions/competition2-bg.jpg');">
+        <div class="container">
+          <div class="competition-caption">
+            <h1>Machine Learning Championship <span class="position">Leaderboard First</span></h1>
+            <div class="details">
+              <p>Built a neural network for image classification.</p>
+              <p>Achieved top scores on multiple datasets.</p>
+              <p>First place among 300+ participants globally.</p>
+            </div>
+          </div>
+          <!-- No more arrow, end of competitions -->
+        </div>
+      </section>
     </section>
+
+
 
     
     <!--Portfolio Section Start-->
