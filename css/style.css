@@ -100,7 +100,7 @@
     margin-bottom: 10px; /* Space between position and title */
     display: inline-block; /* Allow background to wrap only the text */
     background-color: #000000; /* Black background for contrast */
-    padding: 5px 10px; /* Padding around the text */
+    padding: 5px 5px; /* Padding around the text */
     border-radius: 5px; /* Optional: rounded corners */
 }
 
