@@ -1290,177 +1290,94 @@ section.experience .experience-details li:before {
     color: #007bff;
 }
 
-/* 
-/*============ Competitions Section ============*/
-section.competitions {
-    background-color: #222; /* Dark background for contrast */
-    padding: 60px 0;
-}
 
-section.competitions .heading h2 {
-    color: #fff; /* White text to stand out */
-    font-size: 2.5rem;
-    font-weight: 600;
-}
+/*========== Competitions Full-Screen Sections ==========*/
 
-.competition-item {
-    background: #333; /* Darker card background */
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.competition-fullscreen {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.competition-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-}
-
-.competition-logo {
-    width: 100px;
-    height: 100px;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    padding: 50px;
     overflow: hidden;
-    border-radius: 50%; /* Circular logo */
-    background: #fff;
-    padding: 10px;
+}
+
+.competition-fullscreen:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.competition-caption {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* White text color for contrast */
+    text-align: center;
+    width: 100%;
+    max-width: 900px; /* Limit the width of the content */
+}
+
+.competition-caption h1 {
+    font-size: 3.5rem; /* Large heading */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    gap: 15px; /* Space between title and position */
 }
 
-.competition-logo img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; /* Ensure the image fits without cropping */
+.competition-caption .position {
+    font-size: 2.5rem; /* Slightly smaller for the position text */
+    color: #FFD700; /* Golden color for 'Gold', you can adjust */
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.competition-content {
-    width: 100%;
+.competition-caption .details {
+    margin-top: 30px;
 }
 
-.competition-header {
-    display: flex;
-    justify-content: space-between; /* Aligns the competition name and position */
-    align-items: center;
-    padding: 0 10px;
+.competition-caption .details p {
+    font-size: 1.2rem; /* Adjust font size if needed */
+    margin: 20px 0; /* Increase spacing between points */
+    color: #fff; /* Ensure the text is visible over the background */
+    line-height: 1.8; /* Adjust line-height for better readability */
+    max-width: 700px; /* Control the width of the details text */
+    text-align: left; /* Align to left for a clean look */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.competition-header h3 {
-    color: #f0f0f0; /* Light text color */
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    margin-right: 10px;
-    text-align: left;
-}
-
-.competition-position {
-    color: #ff6b6b; /* Bright color for emphasis */
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: right;
-}
-
-.competition-details {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: #ccc;
-    font-size: 0.95rem;
-}
-
-.competition-details li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 1.2em;
-}
-
-.competition-details li:before {
-    content: "\2022"; /* Use bullet point */
-    color: #ff6b6b; /* Bright color for emphasis */
+/* Arrow to navigate to next competition */
+.arrow {
     position: absolute;
-    left: 0;
-    font-size: 1.2rem;
-    line-height: 1;
-} */
-
-
-
-/*============ Competitions Section ============*/
-
-.competitions-banner {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
 }
 
-.competition-fullscreen {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.arrow a {
+    color: #fff;
+    transition: color 0.3s;
 }
 
-.competition-details {
-  color: #fff;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  width: 80%;
-  margin: 0 auto;
+.arrow a:hover {
+    color: #FFD700; /* Change color on hover */
 }
-
-.competition-details h2 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.competition-position {
-  font-size: 2.5rem;
-  color: #ffd700; /* Gold color */
-  font-weight: 700;
-  display: block;
-  margin-bottom: 30px;
-}
-
-.competition-points {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
-
-.competition-points li {
-  margin-bottom: 15px;
-  position: relative;
-  padding-left: 25px;
-}
-
-.competition-points li:before {
-  content: "\f0da"; /* FontAwesome arrow */
-  font-family: "FontAwesome";
-  position: absolute;
-  left: 0;
-  color: #007bff;
-}
-
 
 
 
