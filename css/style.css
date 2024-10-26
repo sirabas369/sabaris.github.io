@@ -56,7 +56,7 @@
 .intro-caption {
     position: relative;
     z-index: 2;
-    color: #ffffff; /* White text color for contrast */
+    color: #ffffff !important; /* Force white text color */
     text-align: center;
 }
 
