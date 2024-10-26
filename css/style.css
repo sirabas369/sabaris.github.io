@@ -15,7 +15,7 @@
         5. About Section
         6. Services Section
         7. Research Section
-        8. Experience Section  /* New Section */
+        8. Experience Section  
         9. Portfolio Section
         10. Blogs Section
         11. Testimonial Section
@@ -1224,6 +1224,7 @@ section.experience .experience-item {
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    padding-left: 40px; /* Add padding to increase horizontal space */
 }
 
 section.experience .experience-item:hover {
@@ -1231,19 +1232,20 @@ section.experience .experience-item:hover {
 }
 
 section.experience .company-logo {
-    width: 100px; /* Increase this value as needed */
-    height: 100px; /* Make the logo cover the entire height of the item */
+    width: 200px; /* Increase this value as needed */
+    height: 200px; /* Make the logo cover the entire height of the item */
     overflow: hidden;
     border-radius: 15px; /* Rounded rectangle */
-    margin-right: 60px;
     flex-shrink: 0;
     display: flex;
+    align-items: center; /* Center the logo vertically */
+    justify-content: center; /* Center the logo horizontally */
 }
 
 section.experience .company-logo img {
     width: 100%; /* Maintain aspect ratio */
     height: 100%; /* Make sure the logo fills the height */
-    object-fit: cover; /* Crop the image if it overflows */
+    object-fit: contain; /* Crop the image if it overflows */
 }
 
 section.experience .experience-content {
