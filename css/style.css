@@ -109,7 +109,7 @@
 .competition-caption .details p {
     font-size: 1.5rem;
     line-height: 1.6;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin: 0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adds a subtle text shadow */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
